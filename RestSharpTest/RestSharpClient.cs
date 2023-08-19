@@ -43,7 +43,7 @@ namespace RestSharpTest
 
             OrderResponse myData = JsonSerializer.Deserialize<OrderResponse>(json, options);
 
-            Console.WriteLine($"MyDateTime: {myData.shipDate}");
+            Console.WriteLine($"MyDateTime: {myData.ShipDate}");
         }
        
 
@@ -53,15 +53,15 @@ namespace RestSharpTest
             RestClientExample restClientExample = new RestClientExample();
             var result = await restClientExample.PostStoreOfOrder(new OrderRequest()
             {
-                id = 0,
-                petId = 0,
-                quantity = 1,
-                shipDate = DateTime.UtcNow,
-                status = "placed",
-                complete = true
+                Id = 0,
+                PetId = 0,
+                Quantity = 1,
+                ShipDate = DateTime.UtcNow,
+                Status = "placed",
+                Complete = true
             });
             Assert.IsNotNull(result);
-            Assert.IsTrue(result?.id > 7878787878887);
+            Assert.IsTrue(result?.Id > 7878787878887);
         }
     }
 

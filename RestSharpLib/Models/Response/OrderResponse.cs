@@ -9,12 +9,12 @@ namespace RestSharpLib.Models.Response
     
     public class OrderResponse
     {
-        public long id { get; set; }
-        public int petId { get; set; }
-        public int quantity { get; set; }
-        public DateTime shipDate { get; set; }
-        public string status { get; set; }
-        public bool complete { get; set; }
+        public long Id { get; set; }
+        public int PetId { get; set; }
+        public int Quantity { get; set; }
+        public DateTime ShipDate { get; set; }
+        public string Status { get; set; }
+        public bool Complete { get; set; }
     }
 
     
