@@ -66,10 +66,4 @@ namespace RestSharpTest
     }
 
 
-
-    public class MyData
-    {
-       
-        public DateTime shipDate { get; set; }
-    }
 }
